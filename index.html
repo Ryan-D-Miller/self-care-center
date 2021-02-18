@@ -10,16 +10,16 @@
         <h4 class="white-text">Which type of message?</h4>
         <div class="center-align">
           <article class="white-box-top center-align flex-radio">
-            <div>
+            <form name="selection">
               <article class="radio-button" >
-                <input type="radio" id="Affirmation"checked name="selection">
-                <label class="black-font">affirmation</label>
+                <input type="radio" value="affirmation" id="affirmation"checked name="selection">
+                <label for="affirmation" class="black-font">affirmation</label>
               </article>
               <article class="radio-button">
-                <input type="radio" id="mantra" name="selection">
-                <label class="black-font">mantra</label>
+                <input type="radio" value="mantra" id="mantra" name="selection">
+                <label for="mantra" class="black-font">mantra</label>
               </article>
-            </div>
+            </form>
             <article class="center-align">
               <button class="white-text" id="getMessage">Receive Message</button>
             </article>
@@ -30,9 +30,11 @@
             <img class="meditation-img"
             src="./assets/meditate.svg"
             alt="Man Meditating">
+            <p class="message black-font hidden">Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.</p>
           </article>
         </div>
       </section>
-    <script type="text/javascript center" src="main.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script src="data.js"></script>
   </body>
 </html>
