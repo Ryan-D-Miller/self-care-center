@@ -6,3 +6,92 @@ dark-blue - #134d71;
 white - #ffffff;
 black - #000000;
 */
+body, html{
+  height: 100%;
+}
+
+h1 {
+  position: relative;
+  top: 35px;
+  margin-bottom: 100px;
+}
+
+.container{
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.gradient-background {
+  background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf);
+}
+
+.white-text {
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.white-box-top {
+  background: #ffffff;
+  width: 500px;
+  height: 80px;
+  border-radius: 10px;
+  margin-bottom: 75px;
+}
+
+.white-box-bottom {
+  background: #ffffff;
+  width: 800px;
+  height: 160px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.meditation-img {
+  width: 90px;
+  height: 110px;
+}
+
+.flex-radio{
+  flex-direction: column;
+}
+.radio-button {
+  padding: 10px 70px 5px;
+  float: left;
+  position: relative;
+  bottom: 5px;
+  left: 15px;
+}
+
+.black-font {
+    font-family: 'Quicksand', sans-serif;
+    color: #000000;
+    font-size: 15px;
+    font-style: italic;
+}
+
+.center-align{
+  display: flex;
+  justify-content: center;
+}
+
+#getMessage {
+  height: 27px;
+  width: 34%;
+  background-color: #134d71;
+  border-radius: 5px;
+  display: block;
+  border: none;
+  font-size: 15px;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+.hidden {
+  display: none!important;
+}
