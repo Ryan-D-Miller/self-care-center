@@ -35,7 +35,7 @@ h1 {
 .white-box-top {
   background: #ffffff;
   width: 500px;
-  height: 80px;
+  height: 85px;
   border-radius: 10px;
   margin-bottom: 75px;
 }
@@ -90,8 +90,30 @@ h1 {
 
 h4 {
   margin-bottom: 5px;
+  font-size: 18px;
 }
 
 .hidden {
   display: none!important;
+}
+
+.spacing{
+  margin-top: 5px;
+}
+
+.message-font {
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.sparkles {
+  width: 25px;
+  height: 25px;
+}
+
+.favButton{
+  width: 25px;
+  height:  25px;
 }
