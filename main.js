@@ -21,6 +21,15 @@ function showMessage() {
     var statement = selectMessage(affirmations);
     message.innerText = statement;
   }
+  checkForFavorite();
+}
+
+function checkForFavorite() {
+  if(favoritedMessages.includes(message.innerText)){
+    heart.src = "./assets/pink-heart.jpg"
+  }else{
+    heart.src = "./assets/clear-heart.png";
+  }
 }
 
 function hideImage() {
@@ -40,5 +49,4 @@ function selectMessage(type){
 function favoriteMessage() {
   heart.src = "./assets/pink-heart.jpg"
   favoritedMessages.push(message.innerText);
-  console.log(favoritedMessages);
 }
