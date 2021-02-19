@@ -9,12 +9,12 @@ receiveButton.addEventListener("click", showMessage);
 function showMessage() {
   hideImage();
   var selected = radios.value;
-  if(selected === "mantra"){
-    //put a mantra statement here
-    message.innerText = "Im a mantra!";
-  } else if(selected === "affirmation"){
-    //put an affirmation here
-    message.innerText = "Im an affirmation"
+  if(selected === "mantras"){
+    var statement = selectMessage(mantras);
+    message.innerText = statement;
+  } else if(selected === "affirmations"){
+    var statement = selectMessage(affirmations);
+    message.innerText = statement;
   }
 }
 
@@ -25,4 +25,10 @@ function hideImage(){
 
 function getRandomIndex(array){
   return Math.floor(Math.random() * array.length);
+}
+
+function selectMessage(type){
+  var selected = type[getRandomIndex(type)];
+  console.log(selected);
+  return selected;
 }
