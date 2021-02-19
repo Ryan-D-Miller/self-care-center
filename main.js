@@ -1,6 +1,7 @@
 var receiveButton = document.querySelector("#getMessage");
 var meditateImg = document.querySelector(".meditation-img");
-var message = document.querySelector(".message");
+var messageBox = document.querySelector(".message");
+var message = document.querySelector(".message-font");
 var selection = document.forms.selection;
 var radios = selection.elements.selection;
 
@@ -20,7 +21,7 @@ function showMessage() {
 
 function hideImage(){
   meditateImg.classList.add("hidden");
-  message.classList.remove("hidden");
+  messageBox.classList.remove("hidden");
 }
 
 function getRandomIndex(array){

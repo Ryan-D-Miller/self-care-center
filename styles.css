@@ -100,3 +100,20 @@ h4 {
 .spacing{
   margin-top: 5px;
 }
+
+.message-font {
+  font-family: 'Quicksand', sans-serif;
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.sparkles {
+  width: 25px;
+  height: 25px;
+}
+
+.favButton{
+  width: 25px;
+  height:  25px;
+}
