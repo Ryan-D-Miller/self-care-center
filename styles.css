@@ -50,6 +50,17 @@ h1 {
   align-items: center;
 }
 
+.favorite-box {
+  background: #ffffff;
+  width: 800px;
+  height: 600px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
 .meditation-img {
   width: 90px;
   height: 110px;
@@ -88,6 +99,16 @@ h1 {
   font-size: 15px;
 }
 
+#seeFavorites {
+  height: 27px;
+  width: 20%;
+  background-color: #ffbdd6;
+  border-radius: 5px;
+  display: block;
+  border: none;
+  font-size: 15px;
+}
+
 h4 {
   margin-bottom: 5px;
   font-size: 18px;
@@ -116,4 +137,9 @@ h4 {
 .favButton{
   width: 25px;
   height:  25px;
+}
+
+.side-spacing {
+  display: flex;
+  justify-content: space-evenly;
 }

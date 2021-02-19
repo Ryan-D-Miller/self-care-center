@@ -3,6 +3,9 @@ var meditateImg = document.querySelector(".meditation-img");
 var messageBox = document.querySelector(".message");
 var message = document.querySelector(".message-font");
 var heart = document.querySelector(".favButton");
+var viewFavoriteButton = document.querySelector("#seeFavorites");
+var mainPage = document.querySelector(".main-page");
+var favPage = document.querySelector(".favorites-page");
 var selection = document.forms.selection;
 var radios = selection.elements.selection;
 
@@ -10,6 +13,7 @@ var favoritedMessages = [];
 
 receiveButton.addEventListener("click", showMessage);
 heart.addEventListener("click", favoriteMessage);
+viewFavoriteButton.addEventListener("click", viewFavoritePage);
 
 function showMessage() {
   hideImage();
@@ -49,4 +53,13 @@ function selectMessage(type){
 function favoriteMessage() {
   heart.src = "./assets/pink-heart.jpg"
   favoritedMessages.push(message.innerText);
+}
+
+function switchPages() {
+  favPage.classList.toggle("hidden");
+  mainPage.classList.toggle("hidden");
+}
+
+function viewFavoritePage() {
+  switchPages();
 }
