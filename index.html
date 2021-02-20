@@ -6,41 +6,54 @@
   </head>
   <body>
       <section class="gradient-background center container">
-        <h1 class="white-text"><img class="sparkles"
-                src="./assets/sparkles.png"
-                alt="Sparkles Emoji">Self Care Center<img class="sparkles"
-                src="./assets/sparkles.png"
-                alt="Sparkles Emoji"></h1>
-        <h4 class="white-text">Which type of message?</h4>
-        <div class="center-align">
-          <article class="white-box-top center-align flex-radio">
-            <form name="selection">
-              <article class="radio-button" >
-                <input type="radio" value="affirmations" id="affirmation"checked name="selection">
-                <label for="affirmation" class="black-font">affirmation</label>
+        <section class="main-page">
+          <h1 class="white-text"><img class="sparkles"
+                  src="./assets/sparkles.png"
+                  alt="Sparkles Emoji">Self Care Center<img class="sparkles"
+                  src="./assets/sparkles.png"
+                  alt="Sparkles Emoji"></h1>
+          <h4 class="white-text">Which type of message?</h4>
+          <div class="center-align">
+            <article class="white-box-top center-align flex-radio">
+              <form name="selection">
+                <article class="radio-button" >
+                  <input type="radio" value="affirmations" id="affirmation"checked name="selection">
+                  <label for="affirmation" class="black-font">affirmation</label>
+                </article>
+                <article class="radio-button">
+                  <input type="radio" value="mantras" id="mantra" name="selection">
+                  <label for="mantra" class="black-font">mantra</label>
+                </article>
+              </form>
+              <article class="side-spacing spacing">
+                <button class="white-text" id="getMessage">Receive Message</button>
+                <button class="white-text" id="seeFavorites">Favorites!</button>
               </article>
-              <article class="radio-button">
-                <input type="radio" value="mantras" id="mantra" name="selection">
-                <label for="mantra" class="black-font">mantra</label>
-              </article>
-            </form>
-            <article class="center-align spacing">
-              <button class="white-text" id="getMessage">Receive Message</button>
             </article>
-          </article>
-        </div>
-        <div class="center-align">
-          <article class="white-box-bottom">
-            <img class="meditation-img"
-            src="./assets/meditate.svg"
-            alt="Man Meditating">
-            <div class="message center-align hidden">
-              <p class="message-font">Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.</p>
-              <!-- <button class="favButton"></button> -->
-              <img class="favButton" src="./assets/clear-heart.png">
-            </div>
-          </article>
-        </div>
+          </div>
+          <div class="center-align">
+            <article class="white-box-bottom">
+              <img class="meditation-img"
+              src="./assets/meditate.svg"
+              alt="Man Meditating">
+              <div class="message center-align hidden">
+                <p class="message-font">Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.</p>
+                <img class="favButton" src="./assets/clear-heart.png">
+              </div>
+            </article>
+          </div>
+        </section>
+        <section class="favorites-page hidden">
+          <div class="center-align">
+            <article class="favorite-box">
+              <button class="white-text" id="seeMain">Back to Main</button>
+              <section class="favorite-messages">
+                <p class="message-font">Test message</p>
+                <p class="message-font">Test message</p>
+              </section>
+            </article>
+          </div>
+        </section>
       </section>
     <script type="text/javascript" src="main.js"></script>
     <script src="data.js"></script>
