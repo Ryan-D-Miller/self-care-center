@@ -13,6 +13,7 @@ var radios = selection.elements.selection;
 
 var favoritedMessages = [];
 
+window.addEventListener('load', loadFavorites);
 receiveButton.addEventListener("click", showMessage);
 heart.addEventListener("click", favoriteMessage);
 viewFavoriteButton.addEventListener("click", viewFavoritePage);
@@ -26,6 +27,16 @@ function checkIfHeart(event){
     removeFavorite(event.target.parentElement.innerText);
     addContent();
   }
+}
+
+function loadFavorites() {
+  var retrievedObject = localStorage.getItem("savedFavorites");
+  favoritedMessages = JSON.parse(retrievedObject);
+}
+
+function saveFavoritesLocal() {
+  var stringifiedObject = JSON.stringify(favoritedMessages);
+  localStorage.setItem("savedFavorites", stringifiedObject);
 }
 
 
@@ -72,6 +83,7 @@ function favoriteMessage() {
   }else{
     heart.src = "./assets/pink-heart.jpg"
     favoritedMessages.push(message.innerText);
+    saveFavoritesLocal();
   }
 }
 
@@ -79,6 +91,7 @@ function removeFavorite(removedMessage) {
   var index = favoritedMessages.indexOf(removedMessage);
   if(index > -1){
     favoritedMessages.splice(index, 1);
+    saveFavoritesLocal();
   }
 }
 
